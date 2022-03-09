@@ -20,19 +20,14 @@ export default function RecipeList() {
             <div className="flex">
                 <div className="overflow-y-scroll h-screen w-1/2 p-4">
                     {recipes.map((recipe) => (
-                        <div key={recipe.name}>
-                            <div className="w-full border-2 border-b-0 p-2">
-                                <p className="font-medium">{parseName(recipe.name)}</p>
-                            </div>
-
-                            <div className="flex-none border-2 border-t-0 p-2">
-                                <p className="font-medium">{parseIngredients(recipe)}</p>
-                            </div>
+                        <div key={recipe.name} className="w-full border-2 p-2">
+                            <p className="font-medium">{parseName(recipe.name)}</p>
+                            <p className="font-medium">{parseIngredients(recipe)}</p>
                         </div>
                     ))}
                 </div>
-                <div className="h-screen w-1/2 p-4">
-                        {names}
+                <div className="h-screen overflow-y-scroll w-1/2 p-4">
+                    {names}
                 </div>
             </div>
 
@@ -40,9 +35,10 @@ export default function RecipeList() {
     }
 }
 
+// Takes big data of recipes, returns just a list of their names
 function getNames(recipes) {
     var names = [];
-    for (var i=0; i<recipes.length; i++) {
+    for (var i = 0; i < recipes.length; i++) {
         names.push(recipes[i].name);
     }
     console.log(names);
