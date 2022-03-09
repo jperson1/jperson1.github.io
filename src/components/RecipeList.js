@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
+import Info from "./Info.js";
 import { recipes } from "../data/core.js"
 
 export default function RecipeList() {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [names, setNames] = useState([]);
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState("");
 
     useEffect(() => {
-        setNames(getNames(recipes));
-
         if (!isLoaded) {
             setIsLoaded(true);
         }
-        
+
     }, [isLoaded, selected]);
 
     if (!isLoaded) {
@@ -20,16 +18,15 @@ export default function RecipeList() {
     } else {
         return (
             <div className="flex">
-                <div className="overflow-y-scroll h-screen w-1/2 p-4">
+                <div className="overflow-y-scroll h-screen w-1/3 p-4">
                     {recipes.map((recipe) => (
-                        <button key={recipe.name} className="w-full border-2 p-2" onClick={() => setSelected(parseName(recipe.name))}>
+                        <button key={recipe.name} className="w-full border-2 border-b-0 p-2" onClick={() => setSelected(recipe.name)}>
                             <p className="pl-2 flex justify-start font-medium">{parseName(recipe.name)}</p>
-                            <p className="pl-2 flex justify-start font-medium">{parseIngredients(recipe)}</p>
                         </button>
                     ))}
                 </div>
-                <div className="h-screen overflow-y-scroll w-1/2 p-4">
-                    {selected}
+                <div className="overflow-y-scroll w-2/3 p-4">
+                    <Info name={selected} />
                 </div>
             </div>
 
@@ -37,27 +34,5 @@ export default function RecipeList() {
     }
 }
 
-// Takes big data of recipes, returns just a list of their names
-function getNames(recipes) {
-    var names = [];
-    for (var i = 0; i < recipes.length; i++) {
-        names.push(recipes[i].name);
-    }
-    console.log(names);
-    return names;
-}
-
 // ex. "speed-module-2" to "speed module 2"
 function parseName(name) { return name.split("-").join(" "); }
-
-// ex. 
-// { "electronic-circuit": 5, "advanced-circuit": 5 }
-// "5 electronic circuit, 5 advanced circuit"
-function parseIngredients(recipe) {
-    var arr = [];
-    for (var item in recipe.ingredients) {
-        arr.push(recipe.ingredients[item] + " " + item.split("-").join(" "));
-    }
-    var result = arr.join(" --- ");
-    return result;
-}
