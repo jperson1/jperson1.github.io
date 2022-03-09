@@ -1,34 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { recipes } from "../data/core.js"
 
 export default function RecipeList() {
-    return (
-        <div className="float-left flow-root w-1/3 p-4">
-            {recipes.map((recipe) => (
-                <div>
-                    <div key={recipe.name} className="w-full border-2 border-b-0 p-2">
-                        <p className="font-medium">{parseName(recipe.name)}</p>
-                    </div>
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [names, setNames] = useState([]);
 
-                    <div key={recipe.name} className="flex-none border-2 border-t-0 p-2">
-                        <p className="font-medium">{ingredientList(recipe)}</p>
-                    </div>
+    useEffect(() => {
+        setNames(getNames(recipes));
+
+        if (!isLoaded) {
+            setIsLoaded(true);
+        }
+    }, [isLoaded]);
+
+    if (!isLoaded) {
+        return <div>Loading! Please wait, or try reloading the page.</div>
+    } else {
+        return (
+            <div className="flex">
+                <div className="overflow-y-scroll h-screen w-1/2 p-4">
+                    {recipes.map((recipe) => (
+                        <div key={recipe.name}>
+                            <div className="w-full border-2 border-b-0 p-2">
+                                <p className="font-medium">{parseName(recipe.name)}</p>
+                            </div>
+
+                            <div className="flex-none border-2 border-t-0 p-2">
+                                <p className="font-medium">{parseIngredients(recipe)}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-    );
+                <div className="h-screen w-1/2 p-4">
+                        {names}
+                </div>
+            </div>
+
+        );
+    }
 }
 
-// ex. "speed-module-2" to "Speed Module 2"
-function parseName(name){
-    return name.split("-").join(" ");
+function getNames(recipes) {
+    var names = [];
+    for (var i=0; i<recipes.length; i++) {
+        names.push(recipes[i].name);
+    }
+    console.log(names);
+    return names;
 }
 
-function ingredientList(recipe) {
+// ex. "speed-module-2" to "speed module 2"
+function parseName(name) { return name.split("-").join(" "); }
+
+// ex. 
+// { "electronic-circuit": 5, "advanced-circuit": 5 }
+// "5 electronic circuit, 5 advanced circuit"
+function parseIngredients(recipe) {
     var arr = [];
     for (var item in recipe.ingredients) {
-        arr.push(recipe.ingredients[item] + " " + item);
+        arr.push(recipe.ingredients[item] + " " + item.split("-").join(" "));
     }
-    var result = arr.join(", ");
+    var result = arr.join(" --- ");
     return result;
 }

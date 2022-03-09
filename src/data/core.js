@@ -482,20 +482,10 @@ export const recipes = [
         "energy_required": 1,
         "subgroup": "intermediate-product",
         "enabled": false,
-        "ingredients": [
-            {
-                "type": "item",
-                "name": "steel-plate",
-                "amount": 1
-            }
-        ],
-        "result": [
-            {
-                "type": "item",
-                "name": "empty-barrel",
-                "amount": 1
-            }
-        ]
+        "ingredients": {
+            "steel-plate": 1
+        },
+        "result": "empty-barrel"
     },
     {
         "type": "recipe",
