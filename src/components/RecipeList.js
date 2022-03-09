@@ -4,6 +4,7 @@ import { recipes } from "../data/core.js"
 export default function RecipeList() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [names, setNames] = useState([]);
+    const [selected, setSelected] = useState(0);
 
     useEffect(() => {
         setNames(getNames(recipes));
@@ -11,7 +12,8 @@ export default function RecipeList() {
         if (!isLoaded) {
             setIsLoaded(true);
         }
-    }, [isLoaded]);
+        
+    }, [isLoaded, selected]);
 
     if (!isLoaded) {
         return <div>Loading! Please wait, or try reloading the page.</div>
@@ -20,14 +22,14 @@ export default function RecipeList() {
             <div className="flex">
                 <div className="overflow-y-scroll h-screen w-1/2 p-4">
                     {recipes.map((recipe) => (
-                        <div key={recipe.name} className="w-full border-2 p-2">
-                            <p className="font-medium">{parseName(recipe.name)}</p>
-                            <p className="font-medium">{parseIngredients(recipe)}</p>
-                        </div>
+                        <button key={recipe.name} className="w-full border-2 p-2" onClick={() => setSelected(parseName(recipe.name))}>
+                            <p className="pl-2 flex justify-start font-medium">{parseName(recipe.name)}</p>
+                            <p className="pl-2 flex justify-start font-medium">{parseIngredients(recipe)}</p>
+                        </button>
                     ))}
                 </div>
                 <div className="h-screen overflow-y-scroll w-1/2 p-4">
-                    {names}
+                    {selected}
                 </div>
             </div>
 
