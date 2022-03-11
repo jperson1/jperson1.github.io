@@ -9,3 +9,5 @@ Factorio is a game by Wube Software in Prague, Czech Republic. [Link](https://ww
 03/08/22 - Recipe List, ingredient list
 
 03/09/22 - Recipe scrolling, recipe selection
+
+03/10/22 - Search bar
