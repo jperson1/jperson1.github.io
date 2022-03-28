@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Info from "./Info.js";
 import SearchBar from "./SearchBar.js";
-import { recipes } from "../data/core.js"
+import { recipes } from "./core.js"
 
 export default function RecipeList() {
     // Searchbar

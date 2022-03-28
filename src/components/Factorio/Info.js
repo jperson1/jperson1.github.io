@@ -1,5 +1,5 @@
 import React from "react";
-import { recipes } from "../data/core.js"
+import { recipes } from "./core.js"
 
 export default function Info(props){
     var item = getRecipe(props.name);
