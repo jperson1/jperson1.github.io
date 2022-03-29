@@ -44,7 +44,7 @@ export default function Contact() {
                         Contact Me
                     </h2>
                     <p class="leading-relaxed mb-5">
-                        Also feel free to reach out by email, by text, or by phone.
+                        For a faster and more reliable response, please reach out by email or phone.
                     </p>
                     <div class="relative mb-4">
                         <label htmlFor="name" class="leading-7 text-sm text-gray-400">
