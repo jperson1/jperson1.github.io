@@ -17,7 +17,7 @@ export default function RecipeList() {
     const [selected, setSelected] = useState("");
 
     return (
-        <main class="bg-gray-900">
+        <main className="bg-gray-900">
             <div className="grid grid-rows-3 grid-cols-3 bg-white">
                 <div className="row-span-3 h-screen
                             overflow-y-scroll overflow-x-hidden">
