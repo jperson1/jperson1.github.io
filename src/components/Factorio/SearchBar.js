@@ -11,10 +11,6 @@ const SearchBar = ({ searchQuery, setSearchQuery }) => {
                 placeholder="Search Recipes"
                 name="s"
             />
-            <button className="w-1/5 p-4"
-                type="submit">
-                Submit
-            </button>
         </form>
     );
 };

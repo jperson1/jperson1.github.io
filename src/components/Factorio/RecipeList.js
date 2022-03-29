@@ -16,7 +16,7 @@ export default function RecipeList() {
     return (
         <div className="grid grid-rows-3 grid-cols-3">
             <div className="row-span-3 h-screen
-                                overflow-y-scroll overflow-x-hidden">
+                            overflow-y-scroll overflow-x-hidden">
                 <SearchBar
                     searchQuery={searchQuery}
                     setSearchQuery={setSearchQuery}
