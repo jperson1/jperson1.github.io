@@ -9,6 +9,7 @@ import Jobs from "./Jobs.js";
 import Extracurriculars from "./Extracurriculars.js";
 import Coursework from "./Coursework.js";
 import Contact from "./Contact.js";
+import Footer from "../Footer.js";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
             <Extracurriculars />
             <Coursework />
             <Contact />
+            <Footer />
         </main>
     );
 }
