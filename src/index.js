@@ -7,6 +7,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './components/Home/Home';
 import RecipeList from './components/Factorio/RecipeList'
+import Posm from "./components/Posm/Posm"
 
 const rootElement = document.getElementById("root");
 render(
@@ -15,6 +16,7 @@ render(
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="factorio" element={<RecipeList />} />
+            <Route path="possums" element={<Posm />} />
         </Routes>
     </HashRouter>,
     rootElement
