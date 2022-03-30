@@ -31,7 +31,7 @@ export default function Posm() {
             <div className="bg-gray-900 pt-8 text-white">
                 <h1 className="font-medium text-center text-4xl mb-4">Possum Scrolling</h1>
                 <h2 className="font-medium text-center text-l">A collection of over 1000 possum images for you to scroll through!</h2>
-                <h2 className="font-medium text-gray-400 text-center text-l">Please send more images to me at my email!</h2>
+                <h2 className="font-medium text-gray-400 text-center text-l">Please send more images to me at my email! Or if you find a problem/have an issue, also please email me!</h2>
 
                 <InfiniteScroll
                     dataLength={images}
