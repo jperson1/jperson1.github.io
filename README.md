@@ -21,3 +21,5 @@ The Factorio Cheat Sheet page '/#factorio' displays all the core recipes in Fact
 03/28/22 - Routing
 
 03/29/22 - Possum Scroller
+
+03/30/22 - Navbar update, domain redirected
