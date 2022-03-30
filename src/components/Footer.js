@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <hr className="border-gray-400"></hr>
-            <footer className="p-4 flex flex-row text-gray-400 ">
+            <footer className="p-4 flex flex-col md:flex-row text-gray-400 ">
                 <p className="mb-4 mr-8">
                     This website is currently in early development. Expect more features in the future!
                 </p>
