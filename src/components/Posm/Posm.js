@@ -17,7 +17,7 @@ export default function Posm() {
         var temp = [];
 
         for(var i=0; i<count; i++){
-            rand = Math.floor(Math.random() * 1140) + 1;
+            rand = Math.floor(Math.random() * 1137) + 1;
             temp.push('./possums/posm (' + rand + ').jpg')
         }
 
