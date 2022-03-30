@@ -12,7 +12,7 @@ export default function Posm() {
         getImages();
     }, []);
 
-    function getImages(count = 5) {
+    function getImages(count = 12) {
         var rand = 0;
         var temp = [];
 
@@ -44,7 +44,7 @@ export default function Posm() {
                             alt="loading"
                         />}
                 >
-                    <div className="grid grid-cols-3" style={{ marginTop: "30px" }}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row" style={{ marginTop: "30px" }}>
                         {loaded ?
                             images.map((image, key) => (
                                 <PossumImage url={image} key={key} />
