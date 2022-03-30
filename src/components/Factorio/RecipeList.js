@@ -41,7 +41,7 @@ export default function RecipeList() {
 
                 <div className="row-span-2 col-span-2 p-4 border-2
                                 overflow-y-scroll overflow-x-hidden">
-                    heblo
+                    [WIP] - Coming soon!
                 </div>
             </div>
             <Footer />
