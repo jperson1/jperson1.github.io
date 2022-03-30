@@ -118,8 +118,8 @@ export default function Contact() {
                                 <MailIcon class="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                                 EMAIL:
                             </h2>
-                            <a href="mailto:jperson@jperson.dev" className="hover:underline">
-                                jperson@jperson.dev <br />
+                            <a href="mailto:contact@jperson.dev" className="hover:underline">
+                                contact@jperson.dev <br />
                             </a>
                             <a href="mailto:jperson1@umbc.edu" className="hover:underline">
                                 jperson1@umbc.edu

@@ -20,18 +20,11 @@ export default function About() {
                     </p>
                     <div className="flex justify-center">
                         <a
-                            href="#contact"
+                            href="#/about"
                             className="inline-flex py-2 px-6 
                                 text-white bg-purple-600  hover:bg-purple-500 text-lg
                                 rounded shadow-sm">
                             Contact Me
-                        </a>
-                        <a
-                            href="#projects"
-                            className="ml-4 inline-flex py-2 px-6 
-                                text-gray-400 bg-gray-800  hover:bg-gray-700 hover:text-white text-lg
-                                rounded shadow-sm">
-                            See My Previous Work
                         </a>
                     </div>
                 </div>
