@@ -20,6 +20,9 @@ export default function Footer() {
                         <MailIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                         EMAIL:
                     </h2>
+                    <a href="mailto:jperson@jperson.dev" className="hover:underline">
+                        jperson@jperson.dev <br />
+                    </a>
                     <a href="mailto:jperson1@umbc.edu" className="hover:underline">
                         jperson1@umbc.edu
                     </a>
