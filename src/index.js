@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home/Home';
 import RecipeList from './components/Factorio/RecipeList'
 import Posm from "./components/Posm/Posm"
+import AboutPage from "./components/About/About"
 
 const rootElement = document.getElementById("root");
 render(
@@ -17,6 +18,7 @@ render(
             <Route path="/" element={<Home />} />
             <Route path="factorio" element={<RecipeList />} />
             <Route path="possums" element={<Posm />} />
+            <Route path="about" element={<AboutPage />} />
         </Routes>
     </HashRouter>,
     rootElement
