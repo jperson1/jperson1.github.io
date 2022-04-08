@@ -8,7 +8,7 @@ export const projects = [
         description:
             "The site you see here! Built on Node.js and React, this is my first attempt at proper front-end work! It's purpose is to showcase my work and help me learn Javascript and CSS styling.",
         image: "./website.png",
-        link: "https://github.com/jperson1/jperson_site_build", 
+        link: "https://github.com/jperson1/jperson_site_build",
     },
     {
         title: "BracketFy - Spotify Bracket Generator",
@@ -24,15 +24,15 @@ export const projects = [
         description:
             "A comprehensive Notebook that utilizes regression models on Apple stock (AAPL) to predict future pricing. Performace measured with MSE, RMSE, and MAE scoring types.",
         image: "./hyperparameters.png",
-        link: "#projects", 
+        link: "#projects",
     },
     {
         title: "The Ethics of Prenatal Genetic Manipulation",
         subtitle: "Ethical Analysis",
         description:
             "A technical paper covering the ethical aspects of prenatal genetic manipulation, as enabled by gene editing technologies such as CRISPR. Discusses pros and cons from several moral perspectives.",
-        image: "./paper.png", 
-        link: "#projects", 
+        image: "./paper.png",
+        link: "#projects",
     },
 ];
 
@@ -93,7 +93,7 @@ export const courses = [
         subtitle: "MATH 411",
         description: "Mathematical analysis of linear algebra. Topics include finite-dimensional vector spaces, subspaces, basis, linear transformations, matrices, linear functionals, the dual-basis theorem, quotient spaces, determinants, and eigenvalues.",
     },
-    
+
 ];
 
 export const jobs = [
@@ -103,7 +103,15 @@ export const jobs = [
         title: "Quality Assurance Officer",
         time: "October 2020 - Present",
         link: "http://www.nhh-services.com/",
-        description: ["Recurring duties include mental health note auditing and meeting agenda composition. Facilitated the transition of patient files from the DC DBH database to the New Hope database. Reduced average time to transfer insurance/treatment information from 15 minutes to 10 minutes."],
+        responsibilities: [
+            "- Audit mental health notes to ensure DC DBH and DC Medicaid guideline compliance.",
+            "- Manage and vet electronic health records.",
+            "- Monitor online record system for potential malware attacks and malicious use.",
+            "- Design and develop small-scale, internal use applications (written in Python) to significantly reduce time spent on certain tasks, and further ensure adherence to federal guidelines.",
+            "- Maintain and repair hardware such as computers, printers, and phone lines."],
+        accomplishments: [
+            "- Facilitated the transition of 950 patient files (insurance, treatment plans, prescriptions) from the DC DBH database to the New Hope database.",
+            "- Mental health note restructure and internal application development, which led to a reduction in DC DBH and DC Medicaid violations of 30%."],
     },
     {
         company: "UMBC CSEE Department",
@@ -111,7 +119,11 @@ export const jobs = [
         title: "Teaching Fellow",
         time: "September - December 2021",
         link: "https://www.csee.umbc.edu/",
-        description: ["Managed the grading of 20-30 assignments per week for Social and Ethical Issues in IT. Analyzed papers based on students' technical writing and use of ethical reasoning. Advised students on attention to detail and logical argumentative reasoning."],
+        responsibilities: [
+            "- Grade weekly assignments for a class of 60 students.",
+            "- Evaluate students’ technical writing and use of ethical reasoning; advise students on detailed writing and logical argumentative reasoning."],
+        accomplishments: [
+            "- Pre-submission evaluations conducted on students’ assignments earlier in the semester led to a 15% grade increase on subsequent assignments."],
     },
     {
         company: "UMBC Residential Life",
@@ -119,7 +131,11 @@ export const jobs = [
         title: "Project Assistant",
         time: "June - August 2020",
         link: "https://reslife.umbc.edu/",
-        description: ["Conducted routine and emergency maintenance in student residences on campus. Completed several week-long assignments a few days in advance. Changed 600 door batteries and built and replaced 60 window screens in three business weeks."],
+        responsibilities: [
+            "- Conduct emergency drills for on-campus student residences.",
+            "- Perform general facilities maintenance: painting walls/ceilings, moving furniture, changing door batteries, construction and installation of window screens, and escorting contractors through facilities."],
+        accomplishments: [
+            "- Completed scheduled projects 25% faster than previous Project Assistants by streamlining supply delivery and distribution."],
     },
     {
         company: "Champion Martial Arts Studio",
@@ -127,7 +143,13 @@ export const jobs = [
         title: "Taekwondo Instructor",
         time: "June 2014 - August 2020",
         link: "https://www.champma.net/",
-        description: ["I practiced with the studio for several years before recieving my first degree black belt and began teaching. I then taught students of varying ages and skill levels along a team of other instructors."],
+        responsibilities: [
+            "- Instruct child, teen, and adult classes; provide one-on-one lessons to students with learning disabilities.",
+            "- Test student skill proficiency for the purposes of belt advancement.",
+            "- Optimize class time use to reduce student/instructor downtime."],
+        accomplishments: [
+            "- Earned Third Degree Black Belt in 2019.",
+            "- Advanced to senior instructor."],
     },
 ];
 
