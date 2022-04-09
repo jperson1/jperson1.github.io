@@ -70,7 +70,7 @@ export default function About() {
 
                 <p className="mr-8">
                     Factorio Cheat Sheet - Factorio is my favorite game. I made this little cheat sheet for the in-game recipes using some of the base code from the game.
-                    It helps me remeber recipe ingredients and timings. In the future, I'll add functionality to determine how many machines I need to make X item/s or to saturate X belt.
+                    It helps me remember recipe ingredients and timings. In the future, I'll add functionality to determine how many machines I need to make X item/s or to saturate X belt.
                 </p>
 
                 <a className="text-blue-400 hover:underline" href="https://factorio.com">Factorio</a>

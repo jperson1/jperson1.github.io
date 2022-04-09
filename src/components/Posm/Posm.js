@@ -1,6 +1,7 @@
 
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { MailIcon } from "@heroicons/react/solid";
 
 import Footer from "../Footer";
 
@@ -16,7 +17,7 @@ export default function Posm() {
         var rand = 0;
         var temp = [];
 
-        for(var i=0; i<count; i++){
+        for (var i = 0; i < count; i++) {
             rand = Math.floor(Math.random() * 1137) + 1;
             temp.push('./possums/posm (' + rand + ').jpg')
         }
@@ -61,9 +62,9 @@ export default function Posm() {
 }
 
 function PossumImage({ url, key }) {
-    return(
-    <div className="p-4 border-white">
-        <img className="rounded-lg" src={url} key={key} alt={key}/>
-    </div>
+    return (
+        <div className="p-4 border-white">
+            <img className="rounded-lg" src={url} key={key} alt={key} />
+        </div>
     );
 }
