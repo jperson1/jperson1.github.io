@@ -54,7 +54,7 @@ export default function Footer() {
                         ADDRESS:
                     </h2>
                     <p className="leading-relaxed">
-                        See Resume <br></br>
+                        On Request <br></br>
                         Pikesville, MD 21208
                     </p>
                 </div>
