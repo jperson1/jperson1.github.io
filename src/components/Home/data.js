@@ -8,7 +8,7 @@ export const projects = [
         description:
             "The site you see here! Built on Node.js and React, this is my first attempt at proper front-end work! It's purpose is to showcase my work and help me learn Javascript and CSS styling.",
         image: "./website.png",
-        link: "https://github.com/jperson1/jperson_site_build",
+        link: "https://github.com/jperson1/jperson1.github.io",
     },
     {
         title: "BracketFy - Spotify Bracket Generator",
@@ -24,7 +24,7 @@ export const projects = [
         description:
             "A comprehensive Notebook that utilizes regression models on Apple stock (AAPL) to predict future pricing. Performace measured with MSE, RMSE, and MAE scoring types.",
         image: "./hyperparameters.png",
-        link: "#projects",
+        link: "/",
     },
     {
         title: "The Ethics of Prenatal Genetic Manipulation",
@@ -32,7 +32,7 @@ export const projects = [
         description:
             "A technical paper covering the ethical aspects of prenatal genetic manipulation, as enabled by gene editing technologies such as CRISPR. Discusses pros and cons from several moral perspectives.",
         image: "./paper.png",
-        link: "#projects",
+        link: "/",
     },
 ];
 
