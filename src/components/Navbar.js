@@ -26,12 +26,12 @@ export default function Navbar() {
                     <ul class="absolute left-0 top-0 mt-10 p-2 rounded shadow-md bg-white z-10 hidden group-hover:block">
                         <svg class="block fill-current text-white w-4 h-4 absolute left-0 top-0 ml-3 -mt-3 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
                         <div class="p-1 whitespace-no-wrap rounded-full text-sm md:text-base text-gray-700 hover:text-gray-800 hover:bg-gray-200">
-                            <a class="px-2 py-1" href="/">
+                            <a class="px-2 py-1" href="https://drive.google.com/file/d/1nMIFYAw9gZyhNazx7gKwskY69RXzuSbE/view?usp=sharing">
                                 <span class="">General</span>
                             </a>
                         </div>
                         <div class="p-1 whitespace-no-wrap rounded-full text-sm md:text-base text-gray-700 hover:text-gray-800 hover:bg-gray-200">
-                            <a class="px-2 py-1" href="/">
+                            <a class="px-2 py-1" href="https://drive.google.com/file/d/1VwUVrpd7D67a10y5rklVpa0GhQVR8vR4/view?usp=sharing">
                                 <span class="">Federal</span>
                             </a>
                         </div>
