@@ -109,7 +109,7 @@ export default function Contact() {
                                 ADDRESS:
                             </h2>
                             <p class="leading-relaxed">
-                                See Resume <br></br>
+                                On Request <br />
                                 Pikesville, MD 21208
                             </p>
                         </div>
