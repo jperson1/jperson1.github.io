@@ -49,7 +49,7 @@ export default function Projects() {
                     <p class="mx-auto leading-normal text-gray-400">
                         Please note, some of the above projects cannot be shared directly, as they are a component or a product of private UMBC course content. I am, however, happy to talk about my part in these projects by email or by phone.
                     </p>
-                    <a href="#contact" class="mx-auto leading-relaxed text-purple-500 hover:text-purple-400">
+                    <a href="#/about" class="mx-auto leading-relaxed text-purple-500 hover:text-purple-400">
                         Contact Me
                     </a>
                 </div>
