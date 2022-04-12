@@ -141,7 +141,7 @@ export const jobs = [
         company: "Champion Martial Arts Studio",
         place: "Gaithersburg, MD",
         title: "Taekwondo Instructor",
-        time: "June 2014 - August 2020",
+        time: "June 2014 - August 2021",
         link: "https://www.champma.net/",
         responsibilities: [
             "- Instruct child, teen, and adult classes; provide one-on-one lessons to students with learning disabilities.",
