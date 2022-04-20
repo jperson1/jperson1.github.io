@@ -10,12 +10,12 @@ export default function Footer() {
     return (
         <div className="footer">
             <hr className="border-gray-400"></hr>
-            <footer className="p-4 flex flex-col md:flex-row text-gray-400 ">
-                <p className="mb-4 mr-8">
+            <footer className="p-4 flex flex-col md:flex-row text-gray-400">
+                <p className="mr-8">
                     This website is currently in early development. Expect more features in the future!
                 </p>
 
-                <div className="mr-8">
+                <div className="mr-8 pt-4 md:pt-0">
                     <h2 className="title-font font-semibold text-purple-400 tracking-widest text-xs">
                         <MailIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                         EMAIL:
@@ -28,7 +28,7 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <div className="mr-8">
+                <div className="mr-8 pt-4 md:pt-0">
                     <h2 className="title-font font-semibold text-purple-400 tracking-widest text-xs">
                         <PhoneIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                         PHONE:
@@ -38,7 +38,7 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <div className="mr-8">
+                <div className="mr-8 pt-4 md:pt-0">
                     <h2 className="title-font font-semibold text-purple-400 tracking-widest text-xs">
                         <ChipIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                         GIT:
@@ -48,7 +48,7 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <div className="mr-8">
+                <div className="mr-8 pt-4 md:pt-0">
                     <h2 className="title-font font-semibold text-purple-400 tracking-widest text-xs">
                         <GlobeAltIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
                         ADDRESS:
