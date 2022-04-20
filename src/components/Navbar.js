@@ -12,11 +12,11 @@ export default function Navbar() {
                         md:sticky top-0 z-10 text-white">
             <div className="container p-5 space-y-1
                             flex flex-wrap flex-col md:flex-row 
-                            items-center">
+                            md:items-center ml-8 md:ml-0 md:text-base text-xl">
 
                 <Link to="/"><HomeIcon className="text-purple-400 hover:text-purple-500 w-10" /></Link>
 
-                <nav className="pt-2 md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 
+                <nav className="pt-2 md:ml-4 ml-2 md:py-1 md:pl-4 md:border-l md:border-gray-400 
                             hover:font-bold">
                     <Link to="/about">About This Site</Link>
                 </nav>
@@ -38,18 +38,18 @@ export default function Navbar() {
                     </ul>
                 </div>
 
-                <nav className="md:ml-8
+                <nav className="md:ml-8 ml-2 md:pb-0 pb-2
                                 hover:font-bold">
                     <Link to="/possums">Possum Scroller</Link>
                 </nav>
 
 
-                <nav className="md:ml-8
+                <nav className="md:ml-8 ml-2 md:pb-0 pb-2
                             hover:font-bold">
                     <Link to="/factorio">Factorio Cheat Sheet</Link>
                 </nav>
 
-                <nav className="md:ml-8 md:absolute md:right-8">
+                <nav className="md:ml-8 ml-2 md:absolute md:right-8">
                     <a className="pr-8 hover:font-bold" href="https://github.com/jperson1">GitHub</a>
                     <a className="hover:font-bold" href="https://www.linkedin.com/in/james-person-85aa1422b/">LinkedIn</a>
                 </nav>
