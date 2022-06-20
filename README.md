@@ -6,7 +6,7 @@ The Home page '/'
 
 The Possum Scrolling page '#/possums' allows you to view an infinitely-scrolling page of possum pictures. Possums are my favorite animal, and I have far too many pictures of them. I do not own these pictures, I simply uploaded them from my phone so I could share them with everyone. 
 
-The Factorio Cheat Sheet page '/#factorio' displays all the core recipes in Factorio on the left, and lets you select them for viewing on the right. WIP - Very low functionality. Factorio is a game by Wube Software in Prague, Czech Republic [(Link).](https://www.factorio.com/game/about) 
+The Factorio Cheat Sheet page '#/factorio' displays all the core recipes in Factorio on the left, and lets you select them for viewing on the right. WIP - Very low functionality. Factorio is a game by Wube Software in Prague, Czech Republic [(Link).](https://www.factorio.com/game/about) 
 
 03/06/22 - First commit, default React app
 
