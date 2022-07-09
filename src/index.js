@@ -6,7 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar'
 import Home from './components/Home/Home';
-import RecipeList from './components/Factorio/RecipeList'
+// import RecipeList from './components/Factorio/RecipeList'
 import Posm from "./components/Posm/Posm"
 import AboutPage from "./components/About/About"
 
@@ -16,7 +16,7 @@ render(
         <Navbar />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="factorio" element={<RecipeList />} />
+            {/* <Route path="factorio" element={<RecipeList />} /> */}
             <Route path="possums" element={<Posm />} />
             <Route path="about" element={<AboutPage />} />
         </Routes>
