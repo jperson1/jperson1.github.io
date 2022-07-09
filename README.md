@@ -27,3 +27,5 @@ The Factorio Cheat Sheet page '#/factorio' displays all the core recipes in Fact
 04/09/22 - Content change, jobs section
 
 04/10/22 - Navbar resume inclusion
+
+07/09/22 - npm updates, quick fixes, etc.
