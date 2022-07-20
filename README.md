@@ -6,8 +6,6 @@ The Home page '/'
 
 The Possum Scrolling page '#/possums' allows you to view an infinitely-scrolling page of possum pictures. Possums are my favorite animal, and I have far too many pictures of them. I do not own these pictures, I simply uploaded them from my phone so I could share them with everyone.
 
-The Factorio Cheat Sheet page '/#factorio' displays all the core recipes in Factorio on the left, and lets you select them for viewing on the right. WIP - Very low functionality. Factorio is a game by Wube Software in Prague, Czech Republic [(Link).](https://www.factorio.com/game/about)
-
 03/06/22 - First commit, default React app
 
 03/07/22 - Tailwindcss, core recipe list shown
@@ -27,5 +25,7 @@ The Factorio Cheat Sheet page '/#factorio' displays all the core recipes in Fact
 04/09/22 - Content change, jobs section
 
 04/10/22 - Navbar resume inclusion
+
+07/09/22 - npm updates, quick fixes, etc.
 
 07/20/22 - Fearless to jobs section, width changes in Possum Scroller, removed Factorio Cheat Sheet from top bar
