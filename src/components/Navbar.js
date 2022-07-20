@@ -41,7 +41,7 @@ export default function Navbar() {
             <div class="p-1 whitespace-no-wrap rounded-full text-sm md:text-base text-gray-700 hover:text-gray-800 hover:bg-gray-200">
               <a
                 class="px-2 py-1"
-                href="https://drive.google.com/file/d/1nMIFYAw9gZyhNazx7gKwskY69RXzuSbE/view?usp=sharing"
+                href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing"
               >
                 <span class="">General</span>
               </a>
