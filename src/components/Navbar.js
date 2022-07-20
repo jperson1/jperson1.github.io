@@ -44,10 +44,10 @@ export default function Navbar() {
                 </nav>
 
 
-                <nav className="md:ml-8 ml-2 md:pb-0 pb-2
+                {/* <nav className="md:ml-8 ml-2 md:pb-0 pb-2
                             hover:font-bold">
                     <Link to="/factorio">Factorio Cheat Sheet</Link>
-                </nav>
+                </nav> */}
 
                 <nav className="md:ml-8 ml-2 md:absolute md:right-8">
                     <a className="pr-8 hover:font-bold" href="https://github.com/jperson1">GitHub</a>
