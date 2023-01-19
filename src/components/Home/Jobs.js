@@ -42,14 +42,18 @@ export default function Coursework() {
                       ))}
                     </ul>
                     <br />
-                    <p className="font-bold text-gray-300 text-left">
-                      Accomplishments:
-                    </p>
-                    <ul className="text-gray-300 text-left">
-                      {job.accomplishments.map((line) => (
-                        <p className="">{line}</p>
-                      ))}
-                    </ul>
+                    {job.accomplishments && (
+                      <div>
+                        <p className="font-bold text-gray-300 text-left">
+                          Accomplishments:
+                        </p>
+                        <ul className="text-gray-300 text-left">
+                          {job.accomplishments.map((line) => (
+                            <p className="">{line}</p>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </a>
               </div>

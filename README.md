@@ -29,3 +29,5 @@ The Possum Scrolling page '#/possums' allows you to view an infinitely-scrolling
 07/09/22 - npm updates, quick fixes, etc.
 
 07/20/22 - Fearless to jobs section, width changes in Possum Scroller, removed Factorio Cheat Sheet from top bar
+
+1/19/2023 - Housekeeping changes

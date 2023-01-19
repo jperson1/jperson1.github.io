@@ -108,17 +108,29 @@ export const jobs = [
   {
     company: "Fearless",
     place: "Baltimore, MD",
-    title: "Software Engineer Intern - NARA NAC",
-    time: "June 2022 - Present",
+    title: "Software Engineer I",
+    time: "August 2022 - Present",
     link: "https://fearless.tech/",
     responsibilities: [
-      "- Support the development of the National Archives and Records Administration NextGen Catalog (NARA NGC), to be made public in October 2022.",
-      "- Utilize the React and Cypress frameworks to ensure a smooth and responsive front-end experience. Develop the Express API to support both private and public operations. Maintain continuous integration and delivery with Git and CircleCI.",
-      "- Support the efficient operation of Elasticsearch on a MongoDB database for records (large documents), and queries to the MySQL database for contributions (transcriptions, comments, tags).",
-      "- Observe and participate in customer meetings, ensuring project goals and deadlines are met.",
-      "- Participate in agile ceremonies, following Scrum methodologies to achieve project success.",
+      "Perform post-go-live support to the O&M team managing NARA NGC.",
+      "Observe and participate in customer meetings, ensuring project goals and deadlines are met. ",
+      "Participate in agile ceremonies, following Scrum methodologies to achieve project success. ",
     ],
-    accomplishments: ["TBD - Ongoing!"],
+    accomplishments: [
+      "Worked with NARA clients to successfully deploy the NextGen Catalog, a single-page web application that allows for the quick and intuitive searching of over 200 million publicly available digital records. ",
+    ],
+  },
+  {
+    company: "Fearless",
+    place: "Baltimore, MD",
+    title: "Software Engineer Intern - NARA NAC",
+    time: "June - August 2022",
+    link: "https://fearless.tech/",
+    responsibilities: [
+      "Support the development of the National Archives and Records Administration’s NextGen Catalog (NARA NGC), made public in November 2022. ",
+      "Utilize the React and Cypress frameworks to ensure a smooth and responsive front-end experience. Develop the Express API to support secure operations. Maintain continuous integration and delivery with Git and CircleCI. ",
+      "Support the efficient operation of Elasticsearch on a MongoDB database for digital records, and queries to the MySQL database for user contributions. ",
+    ],
   },
   {
     company: "New Hope Health Services, LLC",

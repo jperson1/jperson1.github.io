@@ -28,7 +28,17 @@ export default function Navbar() {
           <Link to="/about">About This Site</Link>
         </nav>
 
-        <div class="relative mx-1 px-1 py-2 group md:ml-8" id="button_moderate">
+        <nav className="md:ml-8 ml-2 md:pb-0 pb-2">
+          <a
+            className="hover:font-bold"
+            href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing"
+            target="_blank"
+          >
+            Résumé
+          </a>
+        </nav>
+
+        {/* <div class="relative mx-1 px-1 py-2 group md:ml-8" id="button_moderate">
           <span class="">Résumés</span>
           <ul class="absolute left-0 top-0 mt-10 p-2 rounded shadow-md bg-white z-10 hidden group-hover:block">
             <svg
@@ -55,7 +65,7 @@ export default function Navbar() {
               </a>
             </div>
           </ul>
-        </div>
+        </div> */}
 
         <nav
           className="md:ml-8 ml-2 md:pb-0 pb-2
@@ -78,7 +88,7 @@ export default function Navbar() {
           </a>
           <a
             className="hover:font-bold"
-            href="https://www.linkedin.com/in/james-person-85aa1422b/"
+            href="https://www.linkedin.com/in/jperson/"
           >
             LinkedIn
           </a>
