@@ -58,7 +58,7 @@ export default function Footer() {
             <GlobeAltIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
             LOCATION:
           </h2>
-          <p className="leading-relaxed">Arlington, VA 22202</p>
+          <p className="leading-relaxed">Alexandria, VA 22202</p>
         </div>
       </footer>
     </div>

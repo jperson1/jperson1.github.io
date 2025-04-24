@@ -18,8 +18,11 @@ export default function About() {
               <MailIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
               EMAIL:
             </h2>
-            <a href="mailto:jperson1@umbc.edu" className="hover:underline">
-              jperson1@umbc.edu
+            <a
+              href="mailto:james.person861@gmail.com"
+              className="hover:underline"
+            >
+              james.person861@gmail.com
             </a>
           </div>
 
@@ -51,7 +54,7 @@ export default function About() {
               <GlobeAltIcon className="text-purple-400 w-4 mr-1 mb-1 inline-block" />
               LOCATION:
             </h2>
-            <p className="leading-relaxed">Arlington, VA 22202</p>
+            <p className="leading-relaxed">Alexandria, VA 22202</p>
           </div>
         </div>
 
@@ -72,13 +75,6 @@ export default function About() {
           to make the Possum Scroller page, an infinitely-scrolling page of
           possum images from my phone. I think it's pretty great!
         </p>
-
-        {/* <p className="mr-8">
-                    Factorio Cheat Sheet - Factorio is my favorite game. I made this little cheat sheet for the in-game recipes using some of the base code from the game.
-                    It helps me remember recipe ingredients and timings. In the future, I'll add functionality to determine how many machines I need to make X item/s or to saturate X belt.
-                </p>
-
-                <a className="text-blue-400 hover:underline" href="https://factorio.com">Factorio</a> */}
       </div>
     </div>
   );

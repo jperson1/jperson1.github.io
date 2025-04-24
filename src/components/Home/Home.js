@@ -12,17 +12,17 @@ import Contact from "./Contact.js";
 import Footer from "../Footer.js";
 
 export default function Home() {
-    return (
-        <main className="text-gray-300 bg-gray-900">
-            <About />
-            <Education />
-            <Skills />
-            <Projects />
-            <Jobs />
-            <Extracurriculars />
-            <Coursework />
-            <Contact />
-            <Footer />
-        </main>
-    );
+  return (
+    <main className="text-gray-300 bg-gray-900">
+      <About />
+      <Education />
+      <Jobs />
+      <Skills />
+      <Projects />
+      <Extracurriculars />
+      <Coursework />
+      {/* <Contact /> */}
+      <Footer />
+    </main>
+  );
 }
