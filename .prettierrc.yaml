@@ -1,0 +1,4 @@
+printWidth: 120,
+singlequote: true,
+tabWidth: 4,
+useTabs: false
