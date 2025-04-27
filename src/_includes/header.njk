@@ -4,30 +4,24 @@
                     flex flex-wrap flex-col md:flex-row space-y-1
                     md:items-center ml-8 md:ml-0 md:text-base text-xl"> #}
     <div class="max-w-7xl mx-auto px-4 py-6
-                grid md:grid-flow-col md:items-center">
-        <a class="text-purple-400 hover:text-purple-500 w-10" href="/">
-            <img eleventy:widths="200,600" href="/assets/img/home.svg" class=""/>
-        </a>
+                grid grid-row-2 md:grid-flow-col">
+        <nav class="justify-self-stretch">
+            <a class="text-purple-400 hover:text-purple-500 w-10" href="/">
+                <img eleventy:widths="200,600" href="/assets/img/home.svg" class="" />
+            </a>
 
-        <nav class="pt-2 md:ml-4 ml-2 md:py-1 md:pl-4 md:border-l md:border-gray-400 
-                            hover:font-bold" >
-            <a href="/about">About This Site</a>
-        </nav>
+            <a class="pr-8 hover:font-bold" href="/about">About This Site</a>
 
-        <nav class="md:ml-8 ml-2 md:pb-0 pb-2">
-            <a class="hover:font-bold"
+            <a class="pr-8 hover:font-bold"
                 href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing"
                 target="_blank" >
                 Résumé
             </a>
+
+            <a class="hover:font-bold" href="/possums">Possum Scroller</a>
         </nav>
 
-        <nav class="md:ml-8 ml-2 md:pb-0 pb-2
-                        hover:font-bold" >
-            <a href="/possums">Possum Scroller</a>
-        </nav>
-
-        <nav class="md:ml-8 ml-2 md:right-8">
+        <nav class="justify-self-start md:justify-self-end">
             <a class="pr-8 hover:font-bold" href="https://github.com/jperson1" >
                 GitHub
             </a>
