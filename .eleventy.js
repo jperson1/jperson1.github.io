@@ -2,9 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 import cssnano from 'cssnano';
-import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
+
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
 export default (config) => {
     //compile tailwind before eleventy processes the files
@@ -38,6 +40,9 @@ export default (config) => {
         }),
     ]);
 
+    config.addPassthroughCopy("src/assets/img");
+
+    config.addPlugin(eleventyImageTransformPlugin);
     config.addPlugin(eleventyNavigationPlugin);
 
     return {
