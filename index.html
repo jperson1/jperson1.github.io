@@ -18,48 +18,83 @@
         <title>James Person - Home</title>
     </head>
 
-    <body class="">
+    <body class="bg-gray-700">
         <header class="bg-gray-800 shadow-md
                     md:sticky top-0 z-10 text-white">
     
-    <div class="max-w-7xl mx-auto px-4 py-6
-                grid md:grid-flow-col md:items-center">
-        <a class="text-purple-400 hover:text-purple-500 w-10" href="/">
-            <img eleventy:widths="200,600" href="/assets/img/home.svg" class="">
-        </a>
-
-        <nav class="pt-2 md:ml-4 ml-2 md:py-1 md:pl-4 md:border-l md:border-gray-400 
-                            hover:font-bold">
-            <a href="/about">About This Site</a>
+    <div class="max-w-6xl mx-auto px-4 py-6
+                grid grid-row-2 md:grid-flow-col">
+        <nav class="justify-self-stretch">
+            
+                <a class="pr-8 hover:font-bold" href="/">
+                    Home
+                </a>
+            
+                <a class="pr-8 hover:font-bold" href="/about">
+                    About this site
+                </a>
+            
+                <a class="pr-8 hover:font-bold" href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing" target="_blank">
+                    Resume
+                </a>
+            
+                <a class="pr-8 hover:font-bold" href="/possums">
+                    Possum Scroller
+                </a>
+            
         </nav>
 
-        <nav class="md:ml-8 ml-2 md:pb-0 pb-2">
-            <a class="hover:font-bold" href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing" target="_blank">
-                Résumé
-            </a>
-        </nav>
-
-        <nav class="md:ml-8 ml-2 md:pb-0 pb-2
-                        hover:font-bold">
-            <a href="/possums">Possum Scroller</a>
-        </nav>
-
-        <nav class="md:ml-8 ml-2 md:right-8">
-            <a class="pr-8 hover:font-bold" href="https://github.com/jperson1">
-                GitHub
-            </a>
-            <a class="hover:font-bold" href="https://www.linkedin.com/in/jperson/">
-                LinkedIn
-            </a>
+        <nav class="justify-self-start md:justify-self-end">
+            
+                <a class="pl-8 hover:font-bold" href="https://github.com/jperson1" target="_blank">
+                    GitHub
+                </a>
+            
+                <a class="pl-8 hover:font-bold" href="https://www.linkedin.com/in/jperson/" target="_blank">
+                    LinkedIn
+                </a>
+            
         </nav>
     </div>
 </header>
+
         <main id="main-content">
             <div class="flex items-center justify-center h-screen">
-    <p class="text-4xl font-bold">This is a test deploy, come back soon!</p>
+    <p class="text-4xl text-white font-bold">This is a test deploy, come back soon!</p>
 </div>
+
         </main>
+        <footer class="bg-gray-800 text-white py-6">
+    <div class="flex justify-center space-x-4 mt-4 text-gray-200">
         
+            <a class="pr-8 hover:font-bold" href="/">
+                Home
+            </a>
+        
+            <a class="pr-8 hover:font-bold" href="/about">
+                About this site
+            </a>
+        
+            <a class="pr-8 hover:font-bold" href="https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing" target="_blank">
+                Resume
+            </a>
+        
+            <a class="pr-8 hover:font-bold" href="/possums">
+                Possum Scroller
+            </a>
+        
+        
+            <a class="pl-8 hover:font-bold" href="https://github.com/jperson1" target="_blank">
+                GitHub
+            </a>
+        
+            <a class="pl-8 hover:font-bold" href="https://www.linkedin.com/in/jperson/" target="_blank">
+                LinkedIn
+            </a>
+        
+    </div>
+</footer>
+
     </body>
 
 </html>
