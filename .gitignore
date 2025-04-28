@@ -1,6 +1,7 @@
-# Builds
+# Build products
 /build
 /_site
+.cache
 
 # Environment Variables
 .env*
@@ -10,3 +11,4 @@
 
 # Scratchfiles (Personal Preference)
 /scratch
+/test.*

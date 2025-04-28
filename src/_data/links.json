@@ -1,10 +1,6 @@
 {
   "navigation": [
     {
-        "text": "Home",
-        "href": "/"
-    },
-    {
         "text": "About this site",
         "href": "/about"
     },
