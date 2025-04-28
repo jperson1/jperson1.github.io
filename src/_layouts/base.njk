@@ -18,12 +18,12 @@
         <title>James Person - {{ title }}</title>
     </head>
 
-    <body class="">
+    <body class="bg-gray-700">
         {% include 'header.njk' %}
         <main id="main-content">
             {{ content | safe }}
         </main>
-        {# {% include 'footer.njk' %} #}
+        {% include 'footer.njk' %}
     </body>
 
 </html>

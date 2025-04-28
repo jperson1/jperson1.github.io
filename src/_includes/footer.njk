@@ -1,0 +1,16 @@
+<footer class="bg-gray-800 text-white py-6">
+    <div class="flex justify-center space-x-4 mt-4 text-gray-200">
+        {% for link in links.navigation %}
+            <a class="pr-8 hover:font-bold" href={{ link.href }}
+                    {% if 'http' in link.href %} target="_blank" {% endif %} >
+                {{ link.text }}
+            </a>
+        {% endfor %}
+        {% for link in links.social %}
+            <a class="pl-8 hover:font-bold" href={{ link.href }}
+                    {% if 'http' in link.href %} target="_blank" {% endif %} >
+                {{ link.text }}
+            </a>
+        {% endfor %}
+    </div>
+</footer>
