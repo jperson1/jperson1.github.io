@@ -1,0 +1,30 @@
+{
+  "navigation": [
+    {
+        "text": "Home",
+        "href": "/"
+    },
+    {
+        "text": "About this site",
+        "href": "/about"
+    },
+    {
+        "text": "Resume",
+        "href": "https://drive.google.com/file/d/1aCri7he8iI0PXFpMNSnFSMRJOpR-EDF2/view?usp=sharing"
+    },
+    {
+        "text": "Possum Scroller",
+        "href": "/possums"
+    }
+  ],
+  "social": [
+    {
+        "text": "GitHub",
+        "href": "https://github.com/jperson1"
+    },
+    {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jperson/"
+    }
+  ]
+}
