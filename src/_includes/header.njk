@@ -1,4 +1,5 @@
 <nav class="bg-gray-800 shadow-md lg:sticky top-0 z-10 text-white text-lg">
+    {# The big version, for most screens #}
     <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="flex items-center px-2 lg:px-0">
@@ -14,7 +15,7 @@
                                     class="rounded-md px-3 py-2 text-gray-300 hover:bg-purple-500"
                                 {% endif %}
                                 href={{ link.href }}
-                                {% if 'http' in link.href %} target="_blank" {% endif %}>
+                                {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %}>
                                 {{ link.text }}
                             </a>
                         {% endfor %}
@@ -27,7 +28,7 @@
                         {% for link in links.social %}
                             <a class="rounded-md px-3 py-2 text-gray-300 hover:bg-purple-500"
                                 href={{ link.href }}
-                                {% if 'http' in link.href %} target="_blank" {% endif %} >
+                                {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
                                 {{ link.text }}
                             </a>
                         {% endfor %}
@@ -37,12 +38,13 @@
         </div>
     </div>
 
-    <div class="lg:hidden" id="mobile-menu">
+    {# The list version, for smaller screens #}
+    <div class="lg:hidden">
         <div class="space-y-1 px-2 pb-3 pt-2">
             {% for link in links.navigation %}
                 <a class="block rounded-md px-3 py-2 text-base text-gray-300 hover:bg-gray-700 hover:text-white"
                     href={{ link.href }}
-                    {% if 'http' in link.href %} target="_blank" {% endif %} >
+                    {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
                     {{ link.text }}
                 </a>
             {% endfor %}
@@ -52,7 +54,7 @@
                 {% for link in links.social %}
                     <a class="block rounded-md px-3 py-2 text-base text-gray-400 hover:bg-gray-700 hover:text-white"
                         href={{ link.href }}
-                        {% if 'http' in link.href %} target="_blank" {% endif %} >
+                        {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
                         {{ link.text }}
                     </a>
                 {% endfor %}

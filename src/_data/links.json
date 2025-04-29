@@ -14,7 +14,8 @@
     },
     {
         "text": "Resume",
-        "href": "/resume"
+        "href": "/assets/files/Person_James_Resume.pdf",
+        "new_tab": true
     }
   ],
   "social": [
