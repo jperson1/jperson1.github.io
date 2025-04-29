@@ -45,6 +45,7 @@ export default (config) => {
     ]);
 
     config.addPassthroughCopy("src/assets/img");
+    config.addPassthroughCopy("src/assets/files");
 
     config.addPlugin(eleventyImageTransformPlugin);
     config.addPlugin(eleventyNavigationPlugin);
