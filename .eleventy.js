@@ -2,11 +2,15 @@ import fs from 'fs';
 import path from 'path';
 
 import cssnano from 'cssnano';
+import dotenv from 'dotenv';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import pluginPDFEmbed from "eleventy-plugin-pdfembed";
+
+dotenv.config();
 
 export default (config) => {
     //compile tailwind before eleventy processes the files
@@ -44,6 +48,10 @@ export default (config) => {
 
     config.addPlugin(eleventyImageTransformPlugin);
     config.addPlugin(eleventyNavigationPlugin);
+    console.log("yoo rofl" + process.env.PDF_EMBED_API_KEY)
+    config.addPlugin(pluginPDFEmbed, {
+		key: process.env.PDF_EMBED_API_KEY
+	});
 
     return {
         markdownTemplateEngine: "njk",
