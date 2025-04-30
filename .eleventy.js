@@ -28,7 +28,7 @@ export default (config) => {
 
         //minify tailwind css
         cssnano({
-        preset: 'default',
+            preset: 'default',
         }),
     ])
     config.on('eleventy.before', async () => {
@@ -40,12 +40,12 @@ export default (config) => {
 
         const outputDir = path.dirname(tailwindOutputPath)
         if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true })
+            fs.mkdirSync(outputDir, { recursive: true })
         }
 
         const result = await processor.process(cssContent, {
-        from: tailwindInputPath,
-        to: tailwindOutputPath,
+            from: tailwindInputPath,
+            to: tailwindOutputPath,
         })
 
         fs.writeFileSync(tailwindOutputPath, result.css)
@@ -61,20 +61,25 @@ export default (config) => {
 
     // Markdown Processing
     const md = new markdownIt({
+        // Using the highlight option just to better style code blocks
+        highlight: function (str) {
+            return '<pre class="text-lg text-gray-200 my-4 p-4 border"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+        },
         html: true,
-        linkify: true,
     }).use(markdownItAnchor, {
         // Adds anchor links to all headings, with slugified text as the id
+        // permalink: headingLinks,
         slugify: s => slugify(s),
     }).use(markdownItClass, {
         // Adds classes to markdown elements for styling
-        h1: ['text-4xl', 'text-gray-50', 'font-bold', 'mt-6'],
-        h2: ['text-3xl', 'text-gray-50', 'font-bold', 'mb-6'],
-        h3: ['text-2xl', 'text-gray-50', 'font-bold', 'mb-6'],
+        h1: ['text-4xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
+        h2: ['text-3xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
+        h3: ['text-2xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
         p: ['text-lg', 'text-gray-50', 'my-4'],
         a: ['text-blue-300', 'hover:text-blue-500', 'transition-colors', 'duration-200'],
-        ol: ['list-decimal', 'text-lg', 'mb-4', 'ml-6', 'text-gray-50'],
-        code: ['text-lg', 'text-gray-200'],
+        ol: ['list-decimal', 'text-xl', 'mb-4', 'ml-5', 'text-gray-200'],
+        ul: ['list-disc', 'text-xl', 'ml-5', 'text-gray-200'],
+        li: ['text-lg', 'text-gray-50'],
     }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
         // Add target="_blank" and rel="noopener noreferrer" to external links so they open in a new tab
         // All links should be formatted in code without the domain name, so adding 'jperson.dev' is just a safeguard
