@@ -17,7 +17,14 @@ import markdownItAnchor from'markdown-it-anchor'
 import markdownItClass from'@toycode/markdown-it-class'
 import mdIterator from 'markdown-it-for-inline'
 
+// Custom Imports
+import headingPermaLinks from "./eleventy_config/heading_permalinks.js"
+
 dotenv.config()
+
+const heading_class_defaults = {
+    headings: ['text-gray-50', 'font-bold', 'mt-6', 'mb-4', 'flex', 'gap-2', 'items-center', 'scroll-mt-20']
+}
 
 export default (config) => {
     // Source for Tailwindcss preprocessor: https://www.humankode.com/eleventy/how-to-set-up-tailwind-4-with-eleventy-3/
@@ -68,13 +75,13 @@ export default (config) => {
         html: true,
     }).use(markdownItAnchor, {
         // Adds anchor links to all headings, with slugified text as the id
-        // permalink: headingLinks,
+        permalink: headingPermaLinks,
         slugify: s => slugify(s),
     }).use(markdownItClass, {
         // Adds classes to markdown elements for styling
-        h1: ['text-4xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
-        h2: ['text-3xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
-        h3: ['text-2xl', 'text-gray-50', 'font-bold', 'mt-6', 'mb-4'],
+        h1: [...heading_class_defaults.headings, ...['text-4xl']],
+        h2: [...heading_class_defaults.headings, ...['text-3xl']],
+        h3: [...heading_class_defaults.headings, ...['text-2xl']],
         p: ['text-lg', 'text-gray-50', 'my-4'],
         a: ['text-blue-300', 'hover:text-blue-500', 'transition-colors', 'duration-200'],
         ol: ['list-decimal', 'text-xl', 'mb-4', 'ml-5', 'text-gray-200'],
