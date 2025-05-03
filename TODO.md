@@ -9,5 +9,8 @@
 - [ ] BREADCRUMBS
 
 ## Refactoring
-- [ ] Break Eleventy config into more files
-- [ ] One spot for icons, system to import them
+- [ ] Break `.eleventy.js` into more files in `./eleventy_config/`
+- [ ] One spot for icons, and a method of importing them
+
+## Workflow
+- [ ] Enable automatic deploys eventually
