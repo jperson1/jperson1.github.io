@@ -1,7 +1,7 @@
 # TODO
 
 ## Content
-- [ ] Projects/experience page
+- [ ] Projects/experience page. Use collections for easy addition and removal.
 - [ ] Contact page
 
 ## Components
@@ -14,6 +14,7 @@
 
 ## Workflow
 - [ ] Enable automatic deploys eventually
+- [ ] Add a linter and formatting rules
 
 
 # DONE
