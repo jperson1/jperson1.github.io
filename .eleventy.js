@@ -70,7 +70,7 @@ export default (config) => {
     const md = new markdownIt({
         // Using the highlight option just to better style code blocks
         highlight: function (str) {
-            return '<pre class="text-lg text-gray-200 my-4 p-4 border"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+            return '<pre class="text-lg text-wrap overflow-hidden text-gray-200 my-4 p-4 border"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
         },
         html: true,
     }).use(markdownItAnchor, {
