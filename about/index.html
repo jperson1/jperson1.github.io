@@ -20,7 +20,7 @@
     <body class="bg-gray-700">
         <nav class="bg-gray-800 shadow-md lg:sticky top-0 z-10 text-white text-lg">
     
-    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="flex items-center px-2 lg:px-0">
                 <div class="flex-shrink-0">
@@ -103,7 +103,7 @@
     </div>
 </nav>
 
-        <main class="mx-auto max-w-7xl p-8" id="main-content">
+        <main class="mx-auto max-w-7xl p-4 sm:p-8" id="main-content">
             <h1 id="about-this-site" tabindex="-1" class="text-gray-50 font-bold mt-6 mb-4 flex gap-2 items-center scroll-mt-20 text-4xl">About this Site
     <a href="#about-this-site" class="flex" aria-label="Permalink for this section">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
@@ -152,7 +152,7 @@
         </svg>
     </a></h3>
 <p class="text-lg text-gray-50 my-4">Static files like images and CSS are not added to the final build by default. They need to be called out in particular so they can be brought over. To do so, add a &quot;passthrough copy&quot; to the Eleventy config. This will ensure that the specified files/folders get copied into the final build. This is also needed for Tailwind, later.</p>
-<pre class="text-lg text-gray-200 my-4 p-4 border"><code>// Passthrough Copies for Static Assets
+<pre class="text-lg text-wrap overflow-hidden text-gray-200 my-4 p-4 border"><code>// Passthrough Copies for Static Assets
 config.addPassthroughCopy(&quot;src/assets/img&quot;)
 config.addPassthroughCopy(&quot;src/assets/files&quot;)
 </code></pre>
@@ -163,7 +163,7 @@ config.addPassthroughCopy(&quot;src/assets/files&quot;)
         </svg>
     </a></h3>
 <p class="text-lg text-gray-50 my-4">Eleventy will parse Markdown on its own. However, styling is tricky. Since we don't want to style every line ourselves (that defeats the purpose), we want to set default styling options for Markdown elements. To do so, we can add markdown-it and markdown-it-class to our project. Then classes can be added in the Eleventy config. Here's an example. I've truncated my own for readability:</p>
-<pre class="text-lg text-gray-200 my-4 p-4 border"><code>// Imports
+<pre class="text-lg text-wrap overflow-hidden text-gray-200 my-4 p-4 border"><code>// Imports
 import markdownIt from &quot;markdown-it&quot;
 import markdownItClass from'@toycode/markdown-it-class'
 
