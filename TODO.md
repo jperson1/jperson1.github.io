@@ -2,7 +2,7 @@
 
 ## Content
 - [ ] Projects/experience page. Use collections for easy addition and removal.
-- [ ] Contact page?
+- [ ] Contact page? Built out with a form, perhaps. Likely not.
 
 ## Components
 - [ ] BREADCRUMBS

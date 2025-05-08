@@ -2,6 +2,7 @@
 layout: base.njk
 title: Home
 ---
+{% import 'icon.njk' as icon %}
 
 <section id="about">
     <div class="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
@@ -14,7 +15,7 @@ title: Home
             </p>
             <div class="flex justify-center gap-4">
                 <a href="#contact" class="inline-flex py-2 px-6 text-white bg-purple-600  hover:bg-purple-500 text-lg rounded shadow-sm" >
-                    Contact Me
+                    Contact
                 </a>
                 <a href="/resume" class="inline-flex py-2 px-6 text-white font-bold hover:bg-purple-500 text-lg rounded border border-gray-600" 
                     rel="noopener noreferrer" target="_blank" >
@@ -23,12 +24,33 @@ title: Home
             </div>
         </div>
         <div class="lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded-3xl border-solid border-4 border-gray-800 shadow-sm"
+            <img class="object-cover object-center rounded-3xl border-solid border-3 border-gray-800 shadow-sm"
                 alt="Profile Picture"
                 src="assets/img/Profile-Picture.jpg" />
         </div>
     </div>
 </section>
-<div class="flex items-center justify-center h-screen">
-    <p class="text-4xl text-white font-bold">This is a test deploy, come back soon!</p>
-</div>
+<section id="contact" class="flex items-center justify-center min-h-[50vh]">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+        <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 text-white">
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+                {{ icon.icon('envelope', 'size-10') }}
+                <p class="text-2xl font-bold text-purple-500">Email</p>
+                <p class="text-base leading-7">Email me at</p>
+                <a class="text-lg font-bold" href="mailto: james.person861@gmail.com">james.person861@gmail.com</a>
+            </div>
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+                {{ icon.icon('phone', 'size-10') }}
+                <p class="text-2xl font-bold text-purple-500">Phone</p>
+                <p class="text-base leading-7">Call or text me at</p>
+                <a class="text-lg font-bold text-purple-blue-500" href="tel:+516-486-5135">+516-486-5135</a>
+            </div>
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+                {{ icon.icon('user-circle', 'size-10') }}
+                <p class="text-2xl font-bold text-purple-500">LinkedIn</p>
+                <p class="text-base leading-7">Find my profile at</p>
+                <a class="text-lg font-bold" target="_blank" href="https://www.linkedin.com/in/jperson/">in/jperson</a>
+            </div>
+        </div>
+    </div>
+</section>
