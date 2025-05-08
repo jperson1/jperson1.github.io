@@ -33,19 +33,20 @@ title: Home
 <section id="contact" class="flex items-center justify-center min-h-[50vh]">
     <div class="container flex flex-col items-center gap-16 mx-auto my-32">
         <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 text-white">
-            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+            {# TODO - Make these one component. #}
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-md">
                 {{ icon.icon('envelope', 'size-10') }}
                 <p class="text-2xl font-bold text-purple-500">Email</p>
                 <p class="text-base leading-7">Email me at</p>
                 <a class="text-lg font-bold" href="mailto: james.person861@gmail.com">james.person861@gmail.com</a>
             </div>
-            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-md">
                 {{ icon.icon('phone', 'size-10') }}
                 <p class="text-2xl font-bold text-purple-500">Phone</p>
                 <p class="text-base leading-7">Call or text me at</p>
                 <a class="text-lg font-bold text-purple-blue-500" href="tel:+516-486-5135">+516-486-5135</a>
             </div>
-            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-main">
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-gray-800 rounded-3xl shadow-md">
                 {{ icon.icon('user-circle', 'size-10') }}
                 <p class="text-2xl font-bold text-purple-500">LinkedIn</p>
                 <p class="text-base leading-7">Find my profile at</p>
