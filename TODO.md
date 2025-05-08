@@ -9,6 +9,8 @@
 
 ## Refactoring
 - [ ] Break `.eleventy.js` into more files in `./eleventy_config/`
+- [ ] Make all the purples the same purple. Favicon, buttons, text. 
+- [ ] Remove the duplication in the header, footer, contacts pages. There don't need to be four cases for linkage there.
 
 ## Workflow
 - [ ] Add a linter and formatting rules
