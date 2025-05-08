@@ -15,7 +15,7 @@
                                     class="rounded-md px-3 py-2 text-gray-200 hover:bg-purple-500"
                                 {% endif %}
                                 href={{ link.href }}
-                                {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %}>
+                                {% if 'http' in link.href or link.new_tab %} target="_blank" rel="noopener noreferrer" {% endif %}>
                                 {{ link.text }}
                             </a>
                         {% endfor %}
@@ -28,7 +28,7 @@
                         {% for link in links.social %}
                             <a class="rounded-md px-3 py-2 text-gray-200 hover:bg-purple-500"
                                 href={{ link.href }}
-                                {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
+                                {% if 'http' in link.href or link.new_tab %} target="_blank" rel="noopener noreferrer" {% endif %} >
                                 {{ link.text }}
                             </a>
                         {% endfor %}
@@ -44,7 +44,7 @@
             {% for link in links.navigation %}
                 <a class="block rounded-md px-3 py-2 text-base text-gray-200 hover:bg-gray-700 hover:text-white"
                     href={{ link.href }}
-                    {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
+                    {% if 'http' in link.href or link.new_tab %} target="_blank" rel="noopener noreferrer" {% endif %} >
                     {{ link.text }}
                 </a>
             {% endfor %}
@@ -54,7 +54,7 @@
                 {% for link in links.social %}
                     <a class="block rounded-md px-3 py-2 text-base text-gray-200 hover:bg-gray-700 hover:text-white"
                         href={{ link.href }}
-                        {% if 'http' in link.href or link.new_tab %} target="_blank" {% endif %} >
+                        {% if 'http' in link.href or link.new_tab %} target="_blank" rel="noopener noreferrer" {% endif %} >
                         {{ link.text }}
                     </a>
                 {% endfor %}
