@@ -14,7 +14,7 @@ pagination:
   size: 1
   alias: redirect
 redirects:
-  - {"from": "/resume/", "to": "/assets/files/Person_James_Resume.pdf/"}
+  - {"from": "/resume/", "to": "/assets/files/Person_James_Resume.pdf"}
 permalink: "{{ redirect.from }}"
 layout: redirect.njk
 ---
